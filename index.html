@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anslation Grammar Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Anslation Grammar Assistant</h1>
+    <p class="tagline">Text → Grammar Corrections → Suggestions</p>
+  </header>
+
+  <main class="container">
+    <section class="editor">
+      <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+      <div class="controls">
+        <select id="language">
+          <option value="en-US">English (US)</option>
+          <option value="en-GB">English (UK)</option>
+          <option value="en">English (General)</option>
+          <option value="hi">Hindi</option>
+        </select>
+        <button id="checkBtn">Check Grammar</button>
+        <button id="clearBtn" class="clear">Clear</button>
+      </div>
+    </section>
+
+    <section class="results">
+      <h2>Suggestions</h2>
+      <ul id="suggestions"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Anslation — Project by Shorya Rajput</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
